@@ -86,3 +86,9 @@ sudo chmod -R g+rw /var/www/html
 find /var/www/html/moodle -type d -exec sudo chmod g+s {} \; # impiega un po'... 1 minuto
 ln -s /var/www/html/moodle ~/moodle.link # per comodità
 ```
+
+
+Install grunt
+
+pnpm i
+pnpx grunt amd 

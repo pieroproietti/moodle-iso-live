@@ -17,3 +17,26 @@ Avviata la live, potete utilizzarla così com'è, oppure installare il sistema u
 * [boost_dark](https://github.com/pieroproietti/moodle-local_boost_dark)
 * [the_login_popup](https://github.com/pieroproietti/moodle-local_the_login_popup)
 * [welcomemessage](https://github.com/pieroproietti/moodle-local_welcomemessage)
+
+
+# mdk
+
+[mdk](https://github.com/FMCorz/mdk)
+[wiki](https://github.com/FMCorz/mdk/wiki)
+
+
+```
+sudo apt install pkg-config default-libmysqlclient-dev build-essential
+```
+
+```
+sudo apt-get install python3-pip default-libmysqlclient-dev libpq-dev python3-dev unixodbc-dev
+```
+
+```
+sudo apt istall pipx
+```
+
+```
+pipx install moodle-sdk
+```
