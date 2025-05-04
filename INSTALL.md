@@ -77,11 +77,12 @@ cd moodle
 git checkout MOODLE_500_STABLE
 cd ..
 sudo mv moodle /var/www/html
-sudo ln -s $HOME/moodle-local_the_login_popup /var/www/html/moodle/local/the_login_popup
-sudo ln -s $HOME/moodle-local_boost_dark /var/www/html/moodle/local/boost_dark
-sudo chown www-data:www-data /var/www/html/moodle
-sudo chgrp -R www-data /var/www/html/moodle
-sudo chmod -R g+rw /var/www/html/moodle
+ln -s $HOME/moodle-local_boost_dark /var/www/html/moodle/local/boost_dark
+#ln -s $HOME/moodle-local_the_login_popup /var/www/html/moodle/local/the_login_popup
+ln -s $HOME/moodle-local_welcomemessage /var/www/html/moodle/local/welcomemessage
+sudo chown www-data:www-data /var/www/html
+sudo chgrp -R www-data /var/www/html
+sudo chmod -R g+rw /var/www/html
 find /var/www/html/moodle -type d -exec sudo chmod g+s {} \; # impiega un po'... 1 minuto
 ln -s /var/www/html/moodle ~/moodle.link # per comodità
 ```
