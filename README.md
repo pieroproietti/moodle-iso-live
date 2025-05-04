@@ -25,6 +25,13 @@ Avviata la live, potete utilizzarla così com'è, oppure installare il sistema u
 [wiki](https://github.com/FMCorz/mdk/wiki)
 
 
+Tipico comando:
+```
+mdk create --version 500 --install --engine mariadb --run dev
+```
+
+
+
 ```
 sudo apt install pkg-config default-libmysqlclient-dev build-essential
 ```
