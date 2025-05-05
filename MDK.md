@@ -32,3 +32,8 @@ Installazione
 ```
 pipx install moodle-sdk
 ```
+
+# Moodle tool pluginskel
+
+Non esiste più il comand `mdk generate plugin`, sostituito da [Moodle tool pluginskel](https://github.com/mudrd8mz/moodle-tool_pluginskel).
+
