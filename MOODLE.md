@@ -1,60 +1,4 @@
-# Installazione LAMP
-Sistema utilizzato Debian 12 (bookworm), apache2, mariadb, php
-
-```
-sudo apt-get install apache2 php8.2 mariadb-server php8.2-mysql libapache2-mod-php8.2 php8.2-gd php8.2-curl php8.2-xmlrpc php8.2-intl php8.2-xml php8.2-soap php8.2-zip php8.2-mbstring
-```
-
-## apache2.conf
-Abilita https:
-```
-sudo a2enmod ssl
-sudo a2ensite default-ssl.conf
-```
-
-## php.ini
-```
-code /etc/php/8.2/apache2/php.ini
-```
-
-Aggiungi alla fine:
-
-```
-extension=mysql.so 
-extension=gd.so
-memory_limit = 40M
-post_max_size = 80M
-upload_max_filesize = 80M 
-max_input_vars=25000
-```
-
-## mariadb:
-Imposta password di root:
-```
-mysqladmin -u root password "mySecurePassword"
-```
-
-Connetti come root:
-```
-mysql -u root -p
-```
-Create una password per root@localhost:
-```
-mysql> SET PASSWORD FOR 'root'@'localhost' = PASSWORD('evolution');
-```
-
-
-mysql> CREATE DATABASE moodle CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
-## phpmyadmin
-```
-apt install phpmyadmin
-```
-
-Dark theme: download darkwolf theme, and unzip it under `/usr/share/phpmyadmin/themes/darkwolf`, quindi edit `/etc/phpmyadmin/config.inc.php` ed aggiungi la linea `$cfg['ThemeDefault'] = 'darkwolf';`
-
-
-# moodle installazione/reinstallazione
+# MOODLE
 Utilizziamo [Moodle](https://moodle.org/?lang=it) direttamente dal repository [git](git://git.moodle.org/moodle.git ), per facilitarne l'aggiornamento ed il cambio versione.
 
 Dopo i primi esperimenti con la versione `MOODLE_405_STABLE` sono passato a `MOODLE_500_STABLE`, ma è facile passare da una versione all'altra, vedi l'istruzione `git checkout MOODLE_500_STABLE`.
@@ -86,9 +30,17 @@ sudo chmod -R g+rw /var/www/html
 find /var/www/html/moodle -type d -exec sudo chmod g+s {} \; # impiega un po'... 1 minuto
 ln -s /var/www/html/moodle ~/moodle.link # per comodità
 ```
+## Moduli AMD (Asynchronous module definition)
 
+Per utilizzare i moduli AMD occorre installare [grunt](https://gruntjs.com/) e la versione di nodejs deve essere >=v22.15.0.
 
-Install grunt
+```
+cd /var/www/html/moodle
+```
 
-pnpm i
-pnpx grunt amd 
+Queindi compilare i moduli amd.
+```
+cd [plugin]/amd
+npx grunt amd 
+```
+
