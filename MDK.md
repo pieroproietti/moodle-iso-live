@@ -41,5 +41,20 @@ Anche questo è un mezzo casino, l'ho ]installato](https://docs.moodle.org/500/e
 
 Non aiuta anche il fatto che la prima cosa che dice è che non è compatibile con il moderno tema `boost`, bisognorebbe usare una `recipe.yaml`, che però può essere costruita anche riempiendo le varie sezioni.
 
-Ma sono tante, troppe...
+Conceptually, the recipe is split into three different parts:
 
+The first part represents the options needed to create the version.php file and the language strings file located at `lang/en/<component>.php`. These two files are mandatory for all plugins, regardless of the plugin type, and the options 
+are declared at the top level of the recipe. These are:
+
+* component, name, release, version, requies, maturiy, copyright, dependencies, lang_strings
+
+The second part consists of features that are common to (most) all plugin types. This in turn is split into two sub-parts:
+
+* Options that have a boolean value and they control if a file is to be generated or not. These are defined under the features section of the recipe. They are:
+install, uninstall, settings, readme, license, upgrade, upgradelib
+* Options that needed to be defined as an array (either associative or numerically indexed). They reside at the top level of the recipe and they are:
+capabilities, message_providers, cli_scripts, observers_events, mobile_addons, phpunit_tests
+
+The last part consists of plugin specific features. All features that correspond to a plugin type will be under the `<componenttype>_features` section of the recipe.
+
+Explanation about what the features do as well as links to relevant Moodle documentation for each of the above options can be found on the web interface, by clicking the help icons.
