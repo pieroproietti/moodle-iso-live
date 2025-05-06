@@ -20,7 +20,7 @@ Sono inclusi, parzialmente funzionanti, i seguenti plugin:
 * [moodle-local_welcome](https://github.com/pieroproietti/moodle-local_welcome)
 
 # Utiizzo 
-Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizatore [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtuialbox](https://www.virtualbox.org/), o copiata all'interno di una chiavetta usb con [ventoy](https://www.ventoy.net/en/index.html).
+Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizatore [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtualbox](https://www.virtualbox.org/) o copiata all'interno di una chiavetta usb con [ventoy](https://www.ventoy.net/en/index.html).
 
 Potete. infine masterizzarla su una chiavetta USB con strumenti come [balena etcher](https://etcher.balena.io/), [rufus](https://rufus.ie/it/) o similari.
 
