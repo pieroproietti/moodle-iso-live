@@ -4,7 +4,7 @@ moodledev è una semplice live Debian bookworm, adattata per lo sviluppo con moo
 
 Avviata la live, potete utilizzarla così com'è, oppure installare il sistema utilizzando l'installer grafico calamares.
 
-# User/password utilizzate
+# User/password
 
 * L'utente mariadb è `root/evolution`
 * L'utente di phpmyadmin è `phpmyadmin/evolution`
@@ -12,7 +12,7 @@ Avviata la live, potete utilizzarla così com'è, oppure installare il sistema u
 * La cartella `moodle` è sotto `/var/www/html`
 * La cartella `moodledata` è sotto `/var/www/moodledata`
 
-# plugin modificati o in sviluppo
+# Plugin modificati/in sviluppo
 
 Sono inclusi, parzialmente funzionanti, i seguenti plugin:
 
@@ -20,16 +20,16 @@ Sono inclusi, parzialmente funzionanti, i seguenti plugin:
 * [moodle-local_welcome](https://github.com/pieroproietti/moodle-local_welcome)
 
 # Utiizzo 
-Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizatore [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtuialbox](https://www.virtualbox.org/),   o copiata all'interno di una chiavetta usb con [ventoy](https://www.ventoy.net/en/index.html).
+Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizatore [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtuialbox](https://www.virtualbox.org/), o copiata all'interno di una chiavetta usb con [ventoy](https://www.ventoy.net/en/index.html).
 
 Potete. infine masterizzarla su una chiavetta USB con strumenti come [balena etcher](https://etcher.balena.io/), [rufus](https://rufus.ie/it/) o similari.
 
-## impostazioni di rete
-Avviate il computer direttamente dalla live ed impostate l'ip della rete su manuale. Nel mio  mio caso 192.`168.1.4/24 con gateway 192.168.1.254`,
+## Impostazioni di rete
+Avviate il computer direttamente dalla live, è possibile impostare l'ip della rete come manuale (esempio:`192.168.1.4/24` con gateway `192.168.1.254`.
 
 ![](./img/configura-rete.png)
 
-E, se sulla macchina host avete previsto in `/etc/hosts` una riga 
+e, se avete impostato sulla macchina host una riga in `/etc/hosts`
 ```
 192.168.1.4    moodledev
 ```
@@ -43,5 +43,3 @@ Non vi resta che loggarmi con `admin/Evolution@1` e buona avventura!
 
 # Guida sviluppo
 [Developer Resource centre](https://moodledev.io/)
-
- 
