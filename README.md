@@ -19,6 +19,22 @@ Sono inclusi, parzialmente funzionanti, i seguenti plugin:
 * [moodle-local_boost_dark](https://github.com/pieroproietti/moodle-local_boost_dark)
 * [moodle-local_welcome](https://github.com/pieroproietti/moodle-local_welcome)
 
+# Utiizzo 
+Potete utilizzare direttamente la live, avviatela ed impostate l'ip della rete su manuale. Nel mio  mio caso 192.`168.1.4/24 con gateway 192.168.1.254`,
+![](./img/configura-rete.png)
+
+Se sulla macchina host avete previsto in `/etc/hosts` una riga 
+```
+192.168.1.4    moodledev
+```
+Potete usarlo anche da questa, o da qualsiasi computer in rete che abbia impostato la risoluione per `moodledev`
+
+## Login
+Aprite il vostro browser all'indirizzo: `http://moodledev/` e cliccate sul link [moode]
+![](./img/moodledev-login.png)
+
+Non vi resta che loggarmi con `admin/Evolution@1` e buona avventura!
+
 # Guide
 [Developer Resource centre](https://moodledev.io/)
 
