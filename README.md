@@ -39,7 +39,7 @@ Potete usarlo anche da questa, o da qualsiasi computer in rete che abbia imposta
 Aprite il vostro browser all'indirizzo: `http://moodledev/` e cliccate sul link [moode]
 ![](./img/moodledev-login.png)
 
-Non vi resta che loggarmi con `admin/Evolution@1` e buona avventura!
+Non vi resta che eseguire il login con `admin/Evolution@1` e buona avventura!
 
 # Guida sviluppo
 [Developer Resource centre](https://moodledev.io/)
