@@ -26,7 +26,7 @@ Potete. infine masterizzarla su una chiavetta USB con strumenti come [balena etc
 
 
 ![](./img/install-system.png)
-La live è comodissima per fare test, ad ogni riavvio abbiamo un sistema vergine, ma questo non sempre è l'ideale. Per un usi più intensivi se ne consiglia l'installazione, utilizzando l'installer GUI calamares.
+La live è comodissima per fare test, ad ogni riavvio avremo un sistema pulito e scevro dai nostri esperimenti, ma questo non sempre è l'ideale. Con il passare del tempo se ne consiglia l'installazione, utilizzando l'installer GUI calamares.
 
 ## Impostazioni di rete
 Avviate il computer direttamente dalla live, è possibile impostare l'ip della rete come manuale (esempio:`192.168.1.4/24` con gateway `192.168.1.254`.
