@@ -14,6 +14,8 @@ Avviata la live, potete utilizzarla così com'è, oppure installare il sistema u
 
 # plugin modificati o in sviluppo
 
+Sono inclusi, parzialmente funzionanti:
+
 * [boost_dark](https://github.com/pieroproietti/moodle-local_boost_dark)
 * [welcome](https://github.com/pieroproietti/moodle-local_welcome)
 
