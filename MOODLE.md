@@ -10,6 +10,8 @@ Dopo i primi esperimenti con la versione `MOODLE_405_STABLE` sono passato a `MOO
 Collegati alla pagina di amministrazione di [pnpmyadmin](./phpmyadmin), login con `root/evolution`, cancella e ricrea il datase moodle.
 
 ## Files
+Anche se per convenzione il nome dei plugin è 
+
 Copia ed incolla:
 
 ```
