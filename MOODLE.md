@@ -13,22 +13,38 @@ Collegati alla pagina di amministrazione di [pnpmyadmin](./phpmyadmin), login co
 Copia ed incolla:
 
 ```
+cd ~
+rm $HOME/moodle-local_boost_dark
+rm $HOME/moodle-local_welcome
 sudo rm -R /var/www/moodledata
 sudo rm -R /var/www/html/moodle
+
+##################################################
+# clone moodle
 cd ~
 git clone git://git.moodle.org/moodle.git 
 cd moodle
 git checkout MOODLE_500_STABLE
-cd ..
+##################################################
+# clone plugin
+cd local
+git clone https://github.com/pieroproietti/moodle-local_boost_dark boost_dark
+git clone https://github.com/pieroproietti/moodle-local_welcome welcome
+##################################################
+# mv moodle in /var/www/html
+cd ~
 sudo mv moodle /var/www/html
-ln -s $HOME/moodle-local_boost_dark /var/www/html/moodle/local/boost_dark
-#ln -s $HOME/moodle-local_the_login_popup /var/www/html/moodle/local/the_login_popup
-ln -s $HOME/moodle-local_welcomemessage /var/www/html/moodle/local/welcomemessage
 sudo chown www-data:www-data /var/www/html
 sudo chgrp -R www-data /var/www/html
 sudo chmod -R g+rw /var/www/html
 find /var/www/html/moodle -type d -exec sudo chmod g+s {} \; # impiega un po'... 1 minuto
-ln -s /var/www/html/moodle ~/moodle.link # per comodità
+##################################################
+# mv moodle in /var/www/html
+# link
+cd ~
+ln -s /var/www/html/moodle/local/boost_dark $HOME/moodle-local_boost_dark
+ln -s /var/www/html/moodle/local/welcome $HOME/moodle-local_welcome
+ln -s /var/www/html/moodle ~/moodle-root
 ```
 ## Moduli AMD (Asynchronous module definition)
 
