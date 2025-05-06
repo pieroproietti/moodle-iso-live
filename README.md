@@ -20,22 +20,28 @@ Sono inclusi, parzialmente funzionanti, i seguenti plugin:
 * [moodle-local_welcome](https://github.com/pieroproietti/moodle-local_welcome)
 
 # Utiizzo 
-Potete utilizzare direttamente la live, avviatela ed impostate l'ip della rete su manuale. Nel mio  mio caso 192.`168.1.4/24 con gateway 192.168.1.254`,
+Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizatore [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtuialbox](https://www.virtualbox.org/),   o copiata all'interno di una chiavetta usb con [ventoy](https://www.ventoy.net/en/index.html).
+
+Potete. infine masterizzarla su una chiavetta USB con strumenti come [balena etcher](https://etcher.balena.io/), [rufus](https://rufus.ie/it/) o similari.
+
+## impostazioni di rete
+Avviate il computer direttamente dalla live ed impostate l'ip della rete su manuale. Nel mio  mio caso 192.`168.1.4/24 con gateway 192.168.1.254`,
+
 ![](./img/configura-rete.png)
 
-Se sulla macchina host avete previsto in `/etc/hosts` una riga 
+E, se sulla macchina host avete previsto in `/etc/hosts` una riga 
 ```
 192.168.1.4    moodledev
 ```
 Potete usarlo anche da questa, o da qualsiasi computer in rete che abbia impostato la risoluione per `moodledev`
 
-## Login
+## Login su moodledev
 Aprite il vostro browser all'indirizzo: `http://moodledev/` e cliccate sul link [moode]
 ![](./img/moodledev-login.png)
 
 Non vi resta che loggarmi con `admin/Evolution@1` e buona avventura!
 
-# Guide
+# Guida sviluppo
 [Developer Resource centre](https://moodledev.io/)
 
  
