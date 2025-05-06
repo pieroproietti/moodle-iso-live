@@ -12,8 +12,12 @@ Avviata la live, potete utilizzarla così com'è, oppure installare il sistema u
 * La cartella `moodle` è sotto `/var/www/html`
 * La cartella `moodledata` è sotto `/var/www/moodledata`
 
-# plugin 
+# plugin usati ed in sviluppo
 
 * [boost_dark](https://github.com/pieroproietti/moodle-local_boost_dark)
-* [the_login_popup](https://github.com/pieroproietti/moodle-local_the_login_popup)
-* [welcomemessage](https://github.com/pieroproietti/moodle-local_welcomemessage)
+* [welcome](https://github.com/pieroproietti/moodle-local_welcome)
+
+# Guide
+[Developer Resource centre](https://moodledev.io/)
+
+ 
