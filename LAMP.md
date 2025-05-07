@@ -8,8 +8,8 @@ sudo apt-get install apache2 php8.2 mariadb-server php8.2-mysql libapache2-mod-p
 ## apache2.conf
 Abilita https:
 ```
-sudo a2enmod ssl
-sudo a2ensite default-ssl.conf
+# sudo a2enmod ssl
+# sudo a2ensite default-ssl.conf
 ```
 
 ## php.ini
@@ -17,17 +17,18 @@ sudo a2ensite default-ssl.conf
 code /etc/php/8.2/apache2/php.ini
 ```
 
-Aggiungi alla fine:
+Aggiungi inizio
 
 ```
-// Add for Moodle
 [PHP]
-extension=mysql.so 
-extension=gd.so
-memory_limit = 40M
-post_max_size = 80M
-upload_max_filesize = 80M 
-max_input_vars=25000
+;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;
+extension=mysql.so             # moodle
+extension=gd.so                # moodle
+memory_limit = 40M             # moodle
+post_max_size = 80M            # moodle
+upload_max_filesize = 80M      # moodle 
+max_input_vars=25000           # moodle
+;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;
 ```
 
 ## mariadb:
