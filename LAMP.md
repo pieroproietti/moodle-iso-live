@@ -43,7 +43,7 @@ max_input_vars=25000           # moodle
 ## mariadb:
 Imposta password di root:
 ```
-mysqladmin -u root password "mySecurePassword"
+mysqladmin -u root password "evolution"
 ```
 # phpmyadmin theme
 
