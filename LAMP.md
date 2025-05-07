@@ -47,6 +47,15 @@ mysqladmin -u root password "mySecurePassword"
 ```
 # phpmyadmin theme
 
-Dark theme: download darkwolf theme, and unzip it under `/usr/share/phpmyadmin/themes/darkwolf`, quindi edit `/etc/phpmyadmin/config.inc.php` ed aggiungi la linea `$cfg['ThemeDefault'] = 'darkwolf';`
+Dark theme: download darkwolf theme, and unzip it and
+```
+mv darkwolf /usr/share/phpmyadmin/themes/
+```
+
+A questo punto, edita `/etc/phpmyadmin/config.inc.php` ed aggiungi la riga:
+
+```
+$cfg['ThemeDefault'] = 'darkwolf';
+```
 
 
