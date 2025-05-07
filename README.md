@@ -20,13 +20,15 @@ Sono inclusi, parzialmente funzionanti, i seguenti plugin:
 * [moodle-local_confirm](https://github.com/pieroproietti/moodle-local_confirm)
 
 # Utiizzo 
-Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizatore [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtualbox](https://www.virtualbox.org/) o copiata all'interno di una chiavetta usb con [ventoy](https://www.ventoy.net/en/index.html).
+Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizzatore come [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtualbox](https://www.virtualbox.org/) o copiata all'interno di una USB formattata con [ventoy](https://www.ventoy.net/en/index.html).
 
-Potete. infine masterizzarla su una chiavetta USB con strumenti come [balena etcher](https://etcher.balena.io/), [rufus](https://rufus.ie/it/) o similari.
+Potete, infine, masterizzarla su una chiavetta USB con strumenti come [balena etcher](https://etcher.balena.io/), [rufus](https://rufus.ie/it/) o similari.
 
 
 ![](./img/install-system.png)
-La live è comodissima per fare test, ad ogni riavvio avremo un sistema pulito e scevro dai nostri esperimenti, ma questo non sempre è l'ideale. Con il passare del tempo se ne consiglia l'installazione, utilizzando l'installer GUI calamares.
+La live è comodissima per fare test e sperimentare, ad ogni riavvio avremo un sistema pulito e scevro dai nostri esperimenti precedent, tuttavia  questo non sempre è desiderabile e, Con il passare del tempo, se ne consiglia l'installazione.
+
+Per l'installazione cliccate semplicemente sull'icona dell'installer, verrà avviato l'installer GUI calamares.
 
 ## Impostazioni di rete
 Avviate il computer direttamente dalla live, è possibile impostare l'ip della rete come manuale (esempio:`192.168.1.4/24` con gateway `192.168.1.254`.

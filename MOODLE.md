@@ -31,7 +31,7 @@ git checkout MOODLE_500_STABLE
 # clone plugin
 cd local
 git clone https://github.com/pieroproietti/moodle-local_boost_dark boost_dark
-git clone https://github.com/pieroproietti/moodle-local_welcome welcome
+git clone https://github.com/pieroproietti/moodle-local_confirm confirm
 ##################################################
 # mv moodle in /var/www/html
 cd ~
@@ -45,7 +45,7 @@ find /var/www/html/moodle -type d -exec sudo chmod g+s {} \; # impiega un po'...
 # link
 cd ~
 ln -s /var/www/html/moodle/local/boost_dark $HOME/moodle-local_boost_dark
-ln -s /var/www/html/moodle/local/welcome $HOME/moodle-local_welcome
+ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
 ln -s /var/www/html/moodle ~/moodle-root
 ```
 ## Moduli AMD (Asynchronous module definition)
