@@ -1,6 +1,6 @@
 # README
 
-moodledev è una semplice live Debian bookworm, adattata per lo sviluppo con moodle, la puoi trovare sul mio [googledrive](https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e?dmr=1&ec=wgc-drive-globalnav-goto) e scaricarla.
+La Moodle ISO Live `moodledev` è una semplice live Debian bookworm, adattata per lo sviluppo con moodle, la puoi trovare sul mio [googledrive](https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e?dmr=1&ec=wgc-drive-globalnav-goto), cerca `egg_of-debian-booworm-moodledev...` e scaricarla.
 
 Avviata la live, potete utilizzarla così com'è, oppure installare il sistema utilizzando l'installer grafico calamares.
 
@@ -17,7 +17,7 @@ Avviata la live, potete utilizzarla così com'è, oppure installare il sistema u
 Sono inclusi, parzialmente funzionanti, i seguenti plugin:
 
 * [moodle-local_boost_dark](https://github.com/pieroproietti/moodle-local_boost_dark)
-* [moodle-local_welcome](https://github.com/pieroproietti/moodle-local_confirm)
+* [moodle-local_confirm](https://github.com/pieroproietti/moodle-local_confirm)
 
 # Utiizzo 
 Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizatore [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtualbox](https://www.virtualbox.org/) o copiata all'interno di una chiavetta usb con [ventoy](https://www.ventoy.net/en/index.html).
