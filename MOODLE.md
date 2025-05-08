@@ -50,6 +50,16 @@ ln -s /var/www/html/moodle/local/boost_dark $HOME/moodle-local_boost_dark
 ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
 ln -s /var/www/html/moodle ~/moodle-root
 
+
+## /etc/bash.bashrc
+Aggiungere, in coda, le linee:
+```
+xport MOODLE=/var/www/html/moodle
+export LOCAL=$MOODLE/local
+export umask 0002
+```
+
+
 ```
 ## Moduli AMD (Asynchronous module definition)
 
