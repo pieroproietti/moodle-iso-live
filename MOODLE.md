@@ -18,8 +18,8 @@ Copia ed incolla:
 cd ~
 rm $HOME/moodle-local_boost_dark
 rm $HOME/moodle-local_confirm
-sudo rm -R /var/www/moodledata
-sudo rm -R /var/www/html/moodle
+rm -R /var/www/moodledata
+rm -R /var/www/html/moodle
 
 ##################################################
 # clone moodle
@@ -53,13 +53,15 @@ ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
 ln -s /var/www/html/moodle ~/moodle-root
 ```
 
-## /etc/bash.bashrc
-Aggiungere, in coda, le linee:
+## Installazione Moodle CLI
 ```
-export MOODLE=/var/www/html/moodle
-export LOCAL=$MOODLE/local
-umask 0002
+sudo chown www-data $MOODLE
+cd $MOODLE/admin/cli
+sudo -u www-data /usr/bin/php install.php
+sudo chown -R artisan:www-data $MOODLE
+
 ```
+
 
 
 ```
