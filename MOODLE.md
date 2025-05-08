@@ -10,7 +10,9 @@ Dopo i primi esperimenti con la versione `MOODLE_405_STABLE` sono passato a `MOO
 Collegati alla pagina di amministrazione di [pnpmyadmin](./phpmyadmin), login con `root/evolution`, cancella e ricrea il datase moodle.
 
 ## Files
-Anche se per convenzione il nome dei plugin è 
+Anche se per convenzione il nome dei plugin è [type]_[oluginname], nella struttura di moodle, viene ad esere tupe/loginname.
+
+Ho posto in `/opt/moodle-latest-500.zip` da cui estraggo moodle.
 
 Copia ed incolla:
 
