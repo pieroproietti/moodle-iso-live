@@ -21,22 +21,17 @@ sudo apt-get install \
 
 ```
 
-## nodejs
-Install nodejs > 22 needing for moodle:
-```
-curl -fsSL https://deb.nodesource.com/setup_23.x -o nodesource_setup.sh
-sudo -E bash nodesource_setup.sh
-```
-
 ## php.ini
 ```
 code /etc/php/8.2/apache2/php.ini
+code /etc/php/8.2/cli/php.ini
 ```
 
-Aggiungi inizio
+Aggiungi ad inizio:
 
 ```
 [PHP]
+
 ;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;
 extension=mysql.so             # moodle
 extension=gd.so                # moodle
@@ -50,11 +45,20 @@ max_input_vars=25000           # moodle
 ## mariadb:
 Imposta password di root:
 ```
-mysqladmin -u root password "evolution"
+sudo mysqladmin -u root password "evolution"
 ```
 # phpmyadmin theme
 
-Dark theme: download darkwolf theme, and unzip it and
+Dark theme: download darkwolf theme
+```
+wget https://files.phpmyadmin.net/themes/darkwolf/5.2/darkwolf-5.2.zip
+```
+
+unzip it:
+```
+unzip darkwolf-5.2.zip
+```
+Quindi copialo in:
 ```
 mv darkwolf /usr/share/phpmyadmin/themes/
 ```
@@ -65,4 +69,14 @@ A questo punto, edita `/etc/phpmyadmin/config.inc.php` ed aggiungi la riga:
 $cfg['ThemeDefault'] = 'darkwolf';
 ```
 
+# nodejs
+Install nodejs > 22 needing for moodle:
+```
+curl -fsSL https://deb.nodesource.com/setup_23.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
+sudo apt upgrade
+sudo apt autoremove --purge
+sudo npm i npm -g
+sudo npm i pnpm -g
+```
 
