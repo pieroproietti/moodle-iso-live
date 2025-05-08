@@ -21,6 +21,13 @@ sudo apt-get install \
 
 ```
 
+## nodejs
+Install nodejs > 22 needing for moodle:
+```
+curl -fsSL https://deb.nodesource.com/setup_23.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
+```
+
 ## php.ini
 ```
 code /etc/php/8.2/apache2/php.ini
