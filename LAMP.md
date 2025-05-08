@@ -80,3 +80,13 @@ sudo npm i npm -g
 sudo npm i pnpm -g
 ```
 
+# permessi in `/var/www`
+Non ci sono ancora file in `/var/www`;
+
+```
+sudo chgrp -R www-data /var/www
+sudo chmod -R g+w /var/www
+```
+
+Ora dovresti riuscire a leggere/scrivere in `/var/www`
+
