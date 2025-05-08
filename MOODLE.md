@@ -24,37 +24,39 @@ sudo rm -R /var/www/html/moodle
 ##################################################
 # clone moodle
 cd ~
-wget https://download.moodle.org/download.php/stable500/moodle-latest-500.zip
-unzip moodle-latest-500.zip
+#wget https://download.moodle.org/download.php/stable500/moodle-latest-500.zip
+unzip /opt/moodle-latest-500.zip
 # git clone git://git.moodle.org/moodle.git 
 # cd moodle
 # git checkout MOODLE_500_STABLE
+
 ##################################################
 # clone plugin
 cd moodle/local
 git clone https://github.com/pieroproietti/moodle-local_boost_dark boost_dark
 #git clone https://github.com/pieroproietti/moodle-local_confirm confirm
+
 ##################################################
 # mv moodle in /var/www/html
 cd ~
-sudo mv moodle /var/www/html
-sudo chown www-data:www-data /var/www/html
-sudo chgrp -R www-data /var/www/html
-sudo chmod -R g+rw /var/www/html
-find /var/www/html/moodle -type d -exec sudo chmod g+s {} \; # impiega un po'... 1 minuto
+mv moodle /var/www/html
+# sudochown www-data:www-data /var/www/html
+# sudo chgrp -R www-data /var/www/html
+# sudo chmod -R g+rw /var/www/html
+#find /var/www/html/moodle -type d -exec sudo chmod g+s {} \; # impiega un po'... 1 minuto
+
 ##################################################
-# mv moodle in /var/www/html
 # link
 cd ~
 ln -s /var/www/html/moodle/local/boost_dark $HOME/moodle-local_boost_dark
 ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
 ln -s /var/www/html/moodle ~/moodle-root
-
+```
 
 ## /etc/bash.bashrc
 Aggiungere, in coda, le linee:
 ```
-xport MOODLE=/var/www/html/moodle
+export MOODLE=/var/www/html/moodle
 export LOCAL=$MOODLE/local
 export umask 0002
 ```
