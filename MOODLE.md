@@ -58,7 +58,7 @@ Aggiungere, in coda, le linee:
 ```
 export MOODLE=/var/www/html/moodle
 export LOCAL=$MOODLE/local
-export umask 0002
+umask 0002
 ```
 
 
