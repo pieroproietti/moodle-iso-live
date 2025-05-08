@@ -88,5 +88,14 @@ sudo chgrp -R www-data /var/www
 sudo chmod -R g+w /var/www
 ```
 
+
+## /etc/bash.bashrc
+Aggiungere, in coda, le linee:
+```
+export MOODLE=/var/www/html/moodle
+export LOCAL=$MOODLE/local
+umask 0002
+```
+
 Ora dovresti riuscire a leggere/scrivere in `/var/www`
 
