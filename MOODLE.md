@@ -52,7 +52,7 @@ mv moodle /var/www/html
 cd ~
 ln -s /var/www/html/moodle/local/boost_dark $HOME/moodle-local_boost_dark
 ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
-ln -s /var/www/html/moodle ~/moodle-root
+
 ```
 
 ## Installazione Moodle CLI
