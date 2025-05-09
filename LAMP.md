@@ -27,21 +27,24 @@ code /etc/php/8.2/apache2/php.ini
 code /etc/php/8.2/cli/php.ini
 ```
 
-Aggiungi ad inizio:
+Aggiungi ad inizio, come nota:
 
 ```
 [PHP]
 
-;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;
-extension=mysql.so              # moodle
-extension=gd.so                 # moodle
-;;;;find and replace with this values;;;
+;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;;
+;;;;find and replace with this values;;;;
+# extension=mysql.so             # moodle
+# extension=gd.so                # moodle
 # memory_limit = 40M             # moodle
 # post_max_size = 80M            # moodle
 # upload_max_filesize = 80M      # moodle 
 # max_input_vars=5000            # moodle
 ;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;
 ```
+
+Quindi decommenta ed imposta i valori richiesti
+
 
 ## mariadb:
 Imposta password di root:
