@@ -34,7 +34,7 @@ Aggiungi ad inizio, come nota:
 
 ;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;;
 ;;;;find and replace with this values;;;;
-# extension=mysql.so             # moodle
+# extension=mysqli.so            # moodle
 # extension=gd.so                # moodle
 # memory_limit = 40M             # moodle
 # post_max_size = 80M            # moodle
