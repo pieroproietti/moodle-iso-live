@@ -50,6 +50,16 @@ ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
 
 ```
 
+## Creazione di user e database moodle
+Aprire la pagina di myphpadmin e connettersi con `root/evolutio`
+
+Scegliere `User accounts` e creare il nuovo utente `moodle` con password `evolution`. Ricordare la spunta su `Create database with same name and grant all privileges`. 
+
+Verrà creato l'utente `moodle` ed il database `moodle` sul quale l'utente avrà pieni privilegi.
+
+
+![](./img/creazione-user-database-moodle.png)
+
 ## Installazione Moodle CLI
 Ho avuto diversi problemi con l'installazione di moodle da browser, consiglio pertanto l'installazione CLI che è sia più veloce che più accurata. Copia ed incolla:
 
