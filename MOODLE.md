@@ -70,7 +70,7 @@ sudo -u www-data /usr/bin/php install.php
 sudo chown -R artisan:www-data $MOODLE
 
 ```
-![](./img/moogle-installazione-cli.png)
+![](./img/moodle-installazione-cli.png)
 
 
 ```
