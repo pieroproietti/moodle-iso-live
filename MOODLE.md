@@ -10,9 +10,9 @@ Dopo i primi esperimenti con la versione `MOODLE_405_STABLE` sono passato a `MOO
 Collegati alla pagina di amministrazione di [pnpmyadmin](./phpmyadmin), login con `root/evolution`, cancella e ricrea il datase moodle.
 
 ## Files
-Anche se per convenzione il nome dei plugin è [type]_[oluginname], nella struttura di moodle, viene ad esere tupe/loginname.
+Anche se per convenzione, nelle repository git il nome dei plugin è `[moodle]-[type]_[oluginname]`, nella struttura di moodle, viene ad esere `[moodle]/[type]/[loginname]`.
 
-Ho posto in `/opt/moodle-latest-500.zip` da cui estraggo moodle.
+Ho posto in `/opt/moodle-latest-500.zip`, la versione ultima stable di moodle. Questa può essere scaricata ed aggiornata da [moodle last realease](https://download.moodle.org/releases/latest/).
 
 Copia ed incolla:
 
@@ -26,14 +26,13 @@ rm -R /var/www/html/moodle
 ##################################################
 # clone moodle
 cd ~
-#wget https://download.moodle.org/download.php/stable500/moodle-latest-500.zip
 unzip /opt/moodle-latest-500.zip
 # git clone git://git.moodle.org/moodle.git 
 # cd moodle
 # git checkout MOODLE_500_STABLE
 
 ##################################################
-# clone plugin
+# git clone dei plugin
 cd moodle/local
 git clone https://github.com/pieroproietti/moodle-local_boost_dark boost_dark
 git clone https://github.com/pieroproietti/moodle-local_confirm confirm
@@ -42,13 +41,9 @@ git clone https://github.com/pieroproietti/moodle-local_confirm confirm
 # mv moodle in /var/www/html
 cd ~
 mv moodle /var/www/html
-# sudochown www-data:www-data /var/www/html
-# sudo chgrp -R www-data /var/www/html
-# sudo chmod -R g+rw /var/www/html
-#find /var/www/html/moodle -type d -exec sudo chmod g+s {} \; # impiega un po'... 1 minuto
 
 ##################################################
-# link
+# creazione dei link
 cd ~
 ln -s /var/www/html/moodle/local/boost_dark $HOME/moodle-local_boost_dark
 ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
@@ -56,6 +51,8 @@ ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
 ```
 
 ## Installazione Moodle CLI
+Ho avuto diversi problemi con l'installazione di moodle da browser, consiglio pertanto l'installazione CLI che è sia più veloce che più accurata. Copia ed incolla:
+
 ```
 sudo chown www-data $MOODLE
 cd $MOODLE/admin/cli
@@ -69,15 +66,16 @@ sudo chown -R artisan:www-data $MOODLE
 ```
 ## Moduli AMD (Asynchronous module definition)
 
-Per utilizzare i moduli AMD occorre installare [grunt](https://gruntjs.com/) e la versione di nodejs deve essere >=v22.15.0.
+Per utilizzare i moduli AMD occorre installare [grunt](https://gruntjs.com/) e `nodejs>=v22.15.0`.
 
 ```
-cd /var/www/html/moodle
+cd $MOODLE
+pnpm i
 ```
 
-Queindi compilare i moduli amd.
+Quindi compilare i moduli amd.
+
 ```
-cd [plugin]/amd
-npx grunt amd 
+pnpx grunt amd  --debug --root=local/confirm --force
 ```
 

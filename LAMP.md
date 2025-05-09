@@ -72,7 +72,7 @@ $cfg['ThemeDefault'] = 'darkwolf';
 # nodejs
 Install nodejs > 22 needing for moodle:
 ```
-curl -fsSL https://deb.nodesource.com/setup_23.x -o nodesource_setup.sh
+curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
 sudo -E bash nodesource_setup.sh
 sudo apt upgrade
 sudo apt autoremove --purge
@@ -97,5 +97,6 @@ export LOCAL=$MOODLE/local
 umask 0002
 ```
 
-Ora dovresti riuscire a leggere/scrivere in `/var/www`
+Ora dovresti riuscire a leggere/scrivere in `/var/www` senza usare `sudo`.
+
 
