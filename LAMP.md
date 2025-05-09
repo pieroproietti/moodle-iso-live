@@ -32,13 +32,13 @@ Aggiungi ad inizio, come nota:
 ```
 [PHP]
 
-;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;;
-;;;;find and replace with this values;;;;
-# extension=gd.so                # moodle
-# memory_limit = 40M             # moodle
-# post_max_size = 80M            # moodle
-# upload_max_filesize = 80M      # moodle 
-# max_input_vars=5000            # moodle
+;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;
+;;;;find and replace with this values;;;
+;extension=gd.so                # moodle
+;memory_limit = 40M             # moodle
+;post_max_size = 80M            # moodle
+;upload_max_filesize = 80M      # moodle 
+;max_input_vars=5000            # moodle
 ;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;
 ```
 

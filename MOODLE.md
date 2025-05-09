@@ -73,7 +73,6 @@ sudo chown -R artisan:www-data $MOODLE
 ![](./img/moodle-installazione-cli.png)
 
 
-```
 ## Moduli AMD (Asynchronous module definition)
 
 Per utilizzare i moduli AMD occorre installare [grunt](https://gruntjs.com/) e `nodejs>=v22.15.0`.

@@ -48,4 +48,5 @@ Aprite il vostro browser all'indirizzo: `http://moodledev/` e cliccate sul link 
 Non vi resta che eseguire il login con `admin/Evolution@1` e buona avventura!
 
 # Guida sviluppo
-[Developer Resource centre](https://moodledev.io/)
+* [Welcome to the Moodle community](https://moodle.org/)
+* [Developer Resource centre](https://moodledev.io/)
