@@ -8,7 +8,7 @@ Avviata la live, potete utilizzarla così com'è, oppure installare il sistema u
 
 * L'utente mariadb è `root/evolution`
 * L'utente di phpmyadmin è `phpmyadmin/evolution`
-* L'utente per moodle è: `admin/Evolution@1`
+* L'utente per moodle è: `admin/evolution`
 * La cartella `moodle` è sotto `/var/www/html`
 * La cartella `moodledata` è sotto `/var/www/moodledata`
 
