@@ -32,14 +32,15 @@ Aggiungi ad inizio:
 ```
 [PHP]
 
-;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;
-extension=mysql.so             # moodle
-extension=gd.so                # moodle
-memory_limit = 40M             # moodle
-post_max_size = 80M            # moodle
-upload_max_filesize = 80M      # moodle 
-max_input_vars=5000            # moodle
-;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;
+extension=mysql.so              # moodle
+extension=gd.so                 # moodle
+;;;;find and replace with this values;;;
+# memory_limit = 40M             # moodle
+# post_max_size = 80M            # moodle
+# upload_max_filesize = 80M      # moodle 
+# max_input_vars=5000            # moodle
+;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;
 ```
 
 ## mariadb:
