@@ -18,8 +18,9 @@ Copia ed incolla:
 
 ```
 cd ~
-rm $HOME/moodle-local_boost_dark
-rm $HOME/moodle-local_confirmdep
+rm -f $HOME/moodle-local_boost_dark
+rm -f $HOME/moodle-local_forzaprofilo
+rm -f $HOME/moodle-local_confirmdep
 rm -R /var/www/moodledata
 rm -R /var/www/html/moodle
 
