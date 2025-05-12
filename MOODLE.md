@@ -35,7 +35,7 @@ unzip /opt/moodle-latest-500.zip
 # git clone dei plugin
 cd moodle/local
 git clone https://github.com/pieroproietti/moodle-local_boost_dark boost_dark
-git clone https://github.com/pieroproietti/moodle-local_confirm confirm
+git clone https://github.com/pieroproietti/moodle-local_confirmdep confirmdep
 
 ##################################################
 # mv moodle in /var/www/html
@@ -46,7 +46,7 @@ mv moodle /var/www/html
 # creazione dei link
 cd ~
 ln -s /var/www/html/moodle/local/boost_dark $HOME/moodle-local_boost_dark
-ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
+ln -s /var/www/html/moodle/local/confirmdep $HOME/moodle-local_confirmdep
 
 ```
 
