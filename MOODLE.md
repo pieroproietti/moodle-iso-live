@@ -17,41 +17,7 @@ Ho posto in `/opt/moodle-latest-500.zip`, la versione ultima stable di moodle. Q
 Copia ed incolla:
 
 ```
-cd ~
-rm -f $HOME/moodle-local_boost_dark
-rm -f $HOME/moodle-local_forzaprofilo
-rm -f $HOME/moodle-local_confirmdep
-rm -R /var/www/moodledata
-rm -R /var/www/html/moodle
-
-##################################################
-# clone moodle
-cd ~
-unzip /opt/moodle-latest-500.zip
-# git clone git://git.moodle.org/moodle.git 
-# cd moodle
-# git checkout MOODLE_500_STABLE
-
-##################################################
-# git clone dei plugin
-cd moodle/local
-git clone https://github.com/pieroproietti/moodle-local_boost_dark boost_dark
-git clone https://github.com/pieroproietti/moodle-local_confirmdep confirmdep
-git clone https://github.com/pieroproietti/moodle-local_forzaprodilo forzaprodilo
-
-
-##################################################
-# mv moodle in /var/www/html
-cd ~
-mv moodle /var/www/html
-
-##################################################
-# creazione dei link
-cd ~
-ln -s /var/www/html/moodle/local/boost_dark $HOME/moodle-local_boost_dark
-ln -s /var/www/html/moodle/local/forzaprofilo $HOME/moodle-local_forzaprofilo
-ln -s /var/www/html/moodle/local/confirmdep $HOME/moodle-local_confirmdep
-
+$HOME/moodle-iso-live/recreate.sh
 ```
 
 ## Creazione di user e database moodle
