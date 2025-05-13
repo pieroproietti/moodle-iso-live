@@ -32,7 +32,13 @@ git clone https://github.com/pieroproietti/moodle-local_forzaprofilo forzaprofil
 cd $HOME
 mv moodle /var/www/html
 mv moodlehq-moodle-local_codechecker-b4422b0/ $LOCAL/codechecker
-cp $HOME/moodle-iso-live/fakeroot/var/www/html/moodle/.phpcs.xml $MOODLE
+l
+
+##################################################
+# pnpx 
+pnpm i
+pnpx grunt ignorefiles
+pnpx grunt amd --root=local/confirmdep --debug --force
 
 ##################################################
 # composer
