@@ -1,30 +1,34 @@
 #!/bin/bash
 
-cd ~
+##################################################
+# cancella i link in $HOME
+cd $HOME
 rm -rf $HOME/moodle
 rm -f $HOME/moodle-local_boost_dark
 rm -f $HOME/moodle-local_codechecker
 rm -f $HOME/moodle-local_forzaprofilo
 rm -f $HOME/moodle-local_confirmdep
+
+##################################################
+# cancella $MOODLE e /var/www/moodledata
 rm -rf /var/www/moodledata
 rm -rf $MOODLE
-rm -rf moodlehq-moodle-local_codechecker-b4422b0
 
 ##################################################
 # clone moodle
-cd ~
+cd $HOME
 unzip /opt/moodle-latest-500.zip
 unzip /opt/moodlehq-moodle-local_codechecker-v5.0.8-0-gb4422b0.zip
 
 ##################################################
 # git clone dei plugin
-cd moodle/local
+cd $HOME/moodle/local
 git clone https://github.com/pieroproietti/moodle-local_boost_dark boost_dark
 git clone https://github.com/pieroproietti/moodle-local_confirmdep confirmdep
 git clone https://github.com/pieroproietti/moodle-local_forzaprofilo forzaprofilo
 
 ##################################################
-# mv moodle in /var/www/html
+# mv moodle in /var/www/html, install codechecker
 cd $HOME
 mv moodle /var/www/html
 mv moodlehq-moodle-local_codechecker-b4422b0/ $LOCAL/codechecker
