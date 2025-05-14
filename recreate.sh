@@ -5,9 +5,11 @@
 cd $HOME
 rm -rf $HOME/moodle
 rm -f $HOME/moodle-local_boost_dark
+rm -f $HOME/moodle-local_claude
 rm -f $HOME/moodle-local_codechecker
-rm -f $HOME/moodle-local_forzaprofilo
 rm -f $HOME/moodle-local_confirmdep
+rm -f $HOME/moodle-local_forzaprofilo
+rm -f $HOME/moodle-local_gemini
 
 ##################################################
 # cancella $MOODLE e /var/www/moodledata
@@ -23,9 +25,12 @@ unzip /opt/moodle-latest-500.zip
 ##################################################
 # git clone dei plugin
 cd $HOME/moodle/local
-# git clone https://github.com/pieroproietti/moodle-local_boost_dark boost_dark
-# git clone https://github.com/pieroproietti/moodle-local_confirmdep confirmdep
-# git clone https://github.com/pieroproietti/moodle-local_forzaprofilo forzaprofilo
+#git clone https://github.com/pieroproietti/moodle-local_boost_dark local_boost_dark
+git clone https://github.com/pieroproietti/moodle-local_claude claude
+#git clone https://github.com/pieroproietti/moodle-local_codechecker codechecker
+#git clone https://github.com/pieroproietti/moodle-local_confirmdep confirmdep
+#git clone https://github.com/pieroproietti/moodle-local_forzaprofilo forzaprofilo
+git clone https://github.com/pieroproietti/moodle-local_gemini
 
 ##################################################
 # mv moodle in /var/www/html, install codechecker
@@ -49,10 +54,12 @@ composer install
 ##################################################
 # creazione dei link
 cd $HOME
-# ln -s /var/www/html/moodle/local/boost_dark $HOME/moodle-local_boost_dark
-# ln -s /var/www/html/moodle/local/codechecker $HOME/moodle-local_codechecker
-# ln -s /var/www/html/moodle/local/confirmdep $HOME/moodle-local_confirmdep
-# ln -s /var/www/html/moodle/local/forzaprofilo $HOME/moodle-local_forzaprofilo
+#ln -s $LOCAL/boost_dark   $HOME/moodle-local_boost_dark
+ln -s $LOCAL/claude       $HOME/moodle-local_claude
+#ln -s $LOCAL/codechecker  $HOME/moodle-local_codechecker
+#ln -s $LOCAL/confirmdep   $HOME/moodle-local_confirmdep
+#ln -s $LOCAL/forzaprofilo $HOME/moodle-local_forzaprofilo
+ln -s $LOCAL/gemini       $HOME/moodle-local_gemini
 
 ##################################################
 # installazione 
