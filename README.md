@@ -12,9 +12,7 @@ Avviata la live, potete utilizzarla così com'è, oppure installare il sistema u
 * La cartella `moodle` è sotto `/var/www/html`
 * La cartella `moodledata` è sotto `/var/www/moodledata`
 
-# Plugin in sviluppo
-
-## [plugin in sviluppo](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=)
+# [Plugin in sviluppo](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=)
 
 # Utiizzo 
 Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizzatore come [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtualbox](https://www.virtualbox.org/) o copiata all'interno di una USB formattata con [ventoy](https://www.ventoy.net/en/index.html).
