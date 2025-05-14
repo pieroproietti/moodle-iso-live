@@ -30,7 +30,7 @@ git clone https://github.com/pieroproietti/moodle-local_claude claude
 #git clone https://github.com/pieroproietti/moodle-local_codechecker codechecker
 #git clone https://github.com/pieroproietti/moodle-local_confirmdep confirmdep
 #git clone https://github.com/pieroproietti/moodle-local_forzaprofilo forzaprofilo
-git clone https://github.com/pieroproietti/moodle-local_gemini
+git clone https://github.com/pieroproietti/moodle-local_gemini gemini
 
 ##################################################
 # mv moodle in /var/www/html, install codechecker
