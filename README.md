@@ -18,6 +18,7 @@ Sono inclusi, parzialmente funzionanti, i seguenti plugin:
 
 * [moodle-local_boost_dark](https://github.com/pieroproietti/moodle-local_boost_dark)
 * [moodle-local_confirmdep](https://github.com/pieroproietti/moodle-local_confirmdep)
+* [moodle-local_gemini](https://github.com/pieroproietti/moodle-local_gemini)
 
 # Utiizzo 
 Questa immagine iso live può essere utilizzata così com'è all'interno di un virtualizzatore come [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtualbox](https://www.virtualbox.org/) o copiata all'interno di una USB formattata con [ventoy](https://www.ventoy.net/en/index.html).
