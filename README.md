@@ -49,7 +49,8 @@ Aprite il vostro browser all'indirizzo: `http://moodledev/` e cliccate sul link 
 Non vi resta che eseguire il login con `admin/Evolution@1` e buona avventura!
 
 # [Plugin in sviluppo](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=)
+Sto sviluppando alcuni semplici plugin per acquisire esperienza, li potete trovare [qui](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=).
 
 # Guida sviluppo
-* [Welcome to the Moodle community](https://moodle.org/)
 * [Developer Resource centre](https://moodledev.io/)
+* [Welcome to the Moodle community](https://moodle.org/)
