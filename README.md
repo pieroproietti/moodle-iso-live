@@ -6,7 +6,7 @@ Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema 
 
 ## User/password
 * gli utenti di sistema nella live sono: `live/evolution` e `root/evolution`;
-* l'utente `root` di mariadb è `root/evolution`, l'utente per moodle nel database è `moodle/evolution`, usa [phpmyadmin](http://moodledev/phpadmin) per connetterti al database:
+* l'utente `root` di mariadb è `root/evolution`, l'utente per moodle nel database è `moodle/evolution`, usa [phpmyadmin](http://moodledev/phpmyadmin) per connetterti al database:
 * l'utente amministratore del sito http://moodledev/moodle è: `admin/evolution`:
 * le cartelle `moodle` e `moodledata` sono rispettivamente `/var/www/html/moodle`, e `/var/www/moodledata`.
 
