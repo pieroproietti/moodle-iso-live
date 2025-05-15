@@ -1,26 +1,25 @@
 # README
 
-`moodledev` è una semplice live Debian bookworm, adattata per lo sviluppo con [moodle](./MOODLE.md). La puoi scaricare liberamente dal mio [drive](https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e?dmr=1&ec=wgc-drive-globalnav-goto), cerca `egg_of-debian-booworm-moodledev_amd64_...`.
+`moodledev` è una live Debian bookworm, adattata per lo sviluppo con [moodle](./MOODLE.md). La puoi scaricare liberamente dal mio [drive](https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e?dmr=1&ec=wgc-drive-globalnav-goto), cerca l'ultima versione di `egg_of-debian-booworm-moodledev_amd64_...`.
 
 Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema utilizzando l'installer grafico calamares.
 
 ## User/password
 
-* L'utente mariadb è `root/evolution`
-* L'utente di [phpmyadmin](http://moodledev/phpadmin) è `phpmyadmin/evolution`
-* L'utente amministratore di [moodle](http://moodledev/moodle) è: `admin/evolution`
-* La cartella `moodle` è sotto `/var/www/html`
-* La cartella `moodledata` è sotto `/var/www/moodledata`
+* L'utente `root` di mariadb è `root/evolution`, l'utente `moodle` del database è `moodle/evolution`
+* Usa [phpmyadmin](http://moodledev/phpadmin) per connetterti al database
+* L'utente amministratore di [moodledev/moodle](http://moodledev/moodle) è: `admin/evolution`
+* La cartella `moodle` è `/var/www/html/moodle`, la cartella `moodledata` è `/var/www/moodledata`
 
 ## vscode extensions
-Sono installate le estensioni per visual studio code: 
+E' preinstallato Visual Studio Code con le estensioni: 
 * [PHP InselliSense](https://marketplace.visualstudio.com/items?itemName=zobo.php-intellisense)
 * [MDLCode - Moodle Plugin Development](https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode)
 
 ## [Plugin in sviluppo](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=)
 Sto sviluppando alcuni semplici plugin per acquisire esperienza, li potete trovare [qui](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=).
 
-## Guida sviluppo
+## Link di sviluppo
 * [Developer Resource centre](https://moodledev.io/)
 * [Welcome to the Moodle community](https://moodle.org/)
 
