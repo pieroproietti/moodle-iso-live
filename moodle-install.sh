@@ -68,4 +68,4 @@ ln -s $LOCAL/gemini       $HOME/moodle-local_gemini
 sudo chown www-data $MOODLE
 cd $MOODLE/admin/cli
 sudo -u www-data /usr/bin/php install.php
-sudo chown -R artisan:www-data $MOODLE
+sudo chown -R $USER:www-data $MOODLE
