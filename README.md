@@ -49,7 +49,7 @@ E' possibile tuttavia anche impostare un indirizzo di rete fisso, agendo sull'ic
 
 
 ## Login su moodledev
-Aprite il vostro browser all'indirizzo: `http://moodledev/` e cliccate sul link [moode]
+Aprite il vostro browser all'indirizzo: http://moodledev/ e cliccate sul link [moode]
 ![](./img/moodledev-login.png)
 
 Non vi resta che eseguire il login con `admin/evolution` e buona avventura!
