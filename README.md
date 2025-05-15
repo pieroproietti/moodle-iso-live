@@ -6,10 +6,9 @@ Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema 
 
 ## User/password
 
-* L'utente `root` di mariadb è `root/evolution`, l'utente `moodle` del database è `moodle/evolution`
-* Usa [phpmyadmin](http://moodledev/phpadmin) per connetterti al database
-* L'utente amministratore del sito http://moodledev/moodle è: `admin/evolution`
-* La cartella `moodle` è `/var/www/html/moodle`, la cartella `moodledata` è `/var/www/moodledata`
+* L'utente `root` di mariadb è `root/evolution`, l'utente `moodle` del database è `moodle/evolution`, usa [phpmyadmin](http://moodledev/phpadmin) per connetterti al database:
+* L'utente amministratore del sito http://moodledev/moodle è: `admin/evolution`:
+* La cartella `moodle` è `/var/www/html/moodle`, la cartella `moodledata` è `/var/www/moodledata`.
 
 ## vscode extensions
 E' preinstallato Visual Studio Code con le estensioni: 
@@ -30,32 +29,28 @@ Potete, infine, masterizzarla su una chiavetta USB con strumenti come [balena et
 
 
 ![](./img/install-system.png)
-La live è comodissima per fare test e sperimentare, ad ogni riavvio avremo un sistema pulito e scevro dai nostri esperimenti precedent, tuttavia  questo non sempre è desiderabile e, Con il passare del tempo, se ne consiglia l'installazione.
+La live è comodissima per fare test e sperimentare - ad ogni riavvio avremo un sistema pulito e scevro dai nostri esperimenti precedent - tuttavia  questo non è sempre desiderabile e, con il passare del tempo, se ne consiglia l'installazione.
 
 Per l'installazione cliccate semplicemente sull'icona dell'installer, verrà avviato l'installer GUI calamares.
 
 ## Impostazioni di rete
-Io ricorro a questa strategia: 
-* rilevo l'indirizzo ip di una VM e lo pongo sul mio file `/etc/hosts`, esempio:
+Io utilizzo questa strategia: rilevo l'indirizzo ip di una VM e lo pongo sul mio file `/etc/hosts`, esempio:
 ```
 ...
 192.168.1.63 lampdev
 192.168.1.14 moodledev
 ...
 ```
+Poichè normalmente l'ip rilasciato dal server dhcp persiste per la stessa scheda, non ho particolari problemi a connettermi al sito http://moodledev. Quando distruggo la VM, semplicemente aggiorno la mia riga in `/etc/hosts`.
 
-Poichè normalmente l'ip rilasciato dal server dhcp persiste per la stessa scgeda, non ho particolari problemi a connettermi al sito http://moodledev. Quando distruggo la VM, semplicemente aggiorno la mia riga in `/etc/hosts`.
-
-In ogni modo è possibile anche impostare manualmente l'ip della rete, come in figura.
+E' possibile anche impostare l'indirizzo di rete manualmente, cliccando sull'icona di rete in basso a destra e procedendo come in figura.
 
 ![](./img/configura-rete.png)
 
-
-Potete usarlo anche da questa, o da qualsiasi computer in rete che abbia impostato la risoluione per `moodledev`
 
 ## Login su moodledev
 Aprite il vostro browser all'indirizzo: `http://moodledev/` e cliccate sul link [moode]
 ![](./img/moodledev-login.png)
 
-Non vi resta che eseguire il login con `admin/Evolution@1` e buona avventura!
+Non vi resta che eseguire il login con `admin/evolution` e buona avventura!
 
