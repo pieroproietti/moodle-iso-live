@@ -14,8 +14,8 @@ Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema 
 
 ## vscode extensions
 Sono installate le estensioni per visual studio code: 
-[PHP InselliSense](https://marketplace.visualstudio.com/items?itemName=zobo.php-intellisense), 
-[MDLCode - Moodle Plugin Development](https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode).
+* [PHP InselliSense](https://marketplace.visualstudio.com/items?itemName=zobo.php-intellisense)
+* [MDLCode - Moodle Plugin Development](https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode)
 
 ## [Plugin in sviluppo](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=)
 Sto sviluppando alcuni semplici plugin per acquisire esperienza, li potete trovare [qui](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=).
