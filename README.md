@@ -18,10 +18,11 @@ E' preinstallato Visual Studio Code con le estensioni:
 ## [Plugin in sviluppo](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=)
 Sto sviluppando alcuni semplici plugin per acquisire esperienza, li potete trovare [qui](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=).
 
-## Link di sviluppo
-* [Developer Resource centre](https://moodledev.io/)
-* [Welcome to the Moodle community](https://moodle.org/)
+## Link di sviluppo 
+* [Developer Resource centre](https://moodledev.io/) risorse
+* [Welcome to the Moodle community](https://moodle.org/) community
 * [Piazzale Italia](https://moodle.org/mod/forum/view.php?id=956)
+* [Moodle Academy](https://moodle.academy/) corsi
 
 # Utilizzo
 Questa immagine ISO live può essere utilizzata così com'è all'interno di un virtualizzatore come [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtualbox](https://www.virtualbox.org/) o copiata all'interno di una USB formattata con [ventoy](https://www.ventoy.net/en/index.html).
