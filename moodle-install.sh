@@ -59,9 +59,14 @@ ln -s $LOCAL/gemini       $HOME/moodle-local_gemini
 
 ##################################################
 # installazione 
-sudo chown www-data $MOODLE
-
+sudo chown www-data:www-data $MOODLE -R
 cd $MOODLE/admin/cli
 sudo -u www-data /usr/bin/php install.php
+
+##################################################
+# diritti per tutti, siamo in sviluppo..
 sudo chown $USER:www-data $MOODLE -R
-sudo chmod 777 $MOODLE -R
+# user: www-data: lettura, scrittura, esecuzione; 
+# gruppo: www-data lettura, scrittura, esecuzione; 
+# altri: nessuno)
+sudo chmod 770 $MOODLE -R
