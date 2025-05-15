@@ -34,16 +34,16 @@ La live è comodissima per fare test e sperimentare - ad ogni riavvio avremo un 
 Per l'installazione cliccate semplicemente sull'icona dell'installer, verrà avviato l'installer GUI calamares.
 
 ## Impostazioni di rete
-Io utilizzo questa strategia: rilevo l'indirizzo ip di una VM e lo pongo sul mio file `/etc/hosts`, esempio:
+Io utilizzo questa strategia: lascio la rete configurata su dbcp automatico, rilevo l'indirizzo di rete aprendo un terminale e digitando `ip a` e lo copio l'indirizzo sul mio file `/etc/hosts` del mio host. Esempio:
 ```
 ...
 192.168.1.63 lampdev
 192.168.1.14 moodledev
 ...
 ```
-Poichè normalmente l'ip rilasciato dal server dhcp persiste per la stessa scheda, non ho particolari problemi a connettermi al sito http://moodledev. Quando distruggo la VM, semplicemente aggiorno la mia riga in `/etc/hosts`.
+Poichè normalmente l'ip rilasciato dal server dhcp persiste per qualche tempo per lo stesso `macaddress`, non ho particolari problemi a connettermi al sito http://moodledev. Mentre quando distruggo e ricreo la VM, semplicemente aggiorno la mia riga in `/etc/hosts`.
 
-E' possibile anche impostare l'indirizzo di rete manualmente, cliccando sull'icona di rete in basso a destra e procedendo come in figura.
+E' possibile tuttavia anche impostare un indirizzo di rete fisso, agendo sull'icona di rete in basso a destra e procedendo come in figura.
 
 ![](./img/configura-rete.png)
 
