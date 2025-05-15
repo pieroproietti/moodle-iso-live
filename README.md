@@ -7,8 +7,8 @@ Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema 
 ## User/password
 
 * L'utente mariadb è `root/evolution`
-* L'utente di phpmyadmin è `phpmyadmin/evolution`
-* L'utente per moodle è: `admin/evolution`
+* L'utente di [phpmyadmin](http://moodledev/phpadmin) è `phpmyadmin/evolution`
+* L'utente amministratore di [moodle](http://moodledev/moodle) è: `admin/evolution`
 * La cartella `moodle` è sotto `/var/www/html`
 * La cartella `moodledata` è sotto `/var/www/moodledata`
 
@@ -45,7 +45,7 @@ Io ricorro a questa strategia:
 ...
 ```
 
-Poichè normalmente l'ip rilasciato dal server dhcp persiste per la stessa scgeda, non ho particolari problemi a connettermi al sito `http://moodledev`. Quando distruggo la VM, semplicemente aggiorno la mia riga in `/etc/hosts`.
+Poichè normalmente l'ip rilasciato dal server dhcp persiste per la stessa scgeda, non ho particolari problemi a connettermi al sito http://moodledev. Quando distruggo la VM, semplicemente aggiorno la mia riga in `/etc/hosts`.
 
 In ogni modo è possibile anche impostare manualmente l'ip della rete, come in figura.
 
