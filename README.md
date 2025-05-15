@@ -5,7 +5,7 @@
 Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema utilizzando l'installer grafico calamares.
 
 ## User/password
-* l'utente di sistema della live è `live/evolution` e `root/evolution`;
+* gli utento di sistema della live sono: `live/evolution` e `root/evolution`;
 * l'utente `root` di mariadb è `root/evolution`, l'utente `moodle` del database è `moodle/evolution`, usa [phpmyadmin](http://moodledev/phpadmin) per connetterti al database:
 * l'utente amministratore del sito http://moodledev/moodle è: `admin/evolution`:
 * la cartella `moodle` è `/var/www/html/moodle`, la cartella `moodledata` è `/var/www/moodledata`.
