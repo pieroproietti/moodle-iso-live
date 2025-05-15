@@ -21,6 +21,7 @@ Sto sviluppando alcuni semplici plugin per acquisire esperienza, li potete trova
 ## Link di sviluppo
 * [Developer Resource centre](https://moodledev.io/)
 * [Welcome to the Moodle community](https://moodle.org/)
+* [Piazzale Italia](https://moodle.org/mod/forum/view.php?id=956)
 
 # Utilizzo
 Questa immagine ISO live può essere utilizzata così com'è all'interno di un virtualizzatore come [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtualbox](https://www.virtualbox.org/) o copiata all'interno di una USB formattata con [ventoy](https://www.ventoy.net/en/index.html).
