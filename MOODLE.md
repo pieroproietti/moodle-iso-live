@@ -24,6 +24,18 @@ Aziende: per la formazione interna del personale (e-learning).
 Formazione professionale: per corsi certificati e aggiornamento continuo.
 
 ## Installazione
+    
+Ho usato delle impostazioni, su `/etc/bash.bashrc`, valide quindi per ogni utente, anche live:
+
+```
+...
+# Moodledev customize
+export MOODLE=/var/www/html/moodle
+export LOCAL=$MOODLE/local
+umask 0002
+export VSCODE_EXTENSIONS="/opt/vscode_extension"artisan@moodledev:~/moodledev$ 
+```
+
 Utilizziamo [Moodle](https://moodle.org/?lang=it) direttamente dal repository [git](git://git.moodle.org/moodle.git), per facilitarne l'aggiornamento ed il cambio versione.
 
 Dopo i primi esperimenti con la versione `MOODLE_405_STABLE` sono passato a `MOODLE_500_STABLE`, ma è facile passare da una versione all'altra, vedi l'istruzione `git checkout MOODLE_500_STABLE`.
