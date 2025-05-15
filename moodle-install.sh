@@ -38,18 +38,20 @@ cd $HOME
 mv moodle /var/www/html
 #mv moodlehq-moodle-local_codechecker-b4422b0/ $LOCAL/codechecker
 
+##################################################
+# composer
+cd $MOODLE
+composer install
 
 ##################################################
 # pnpx 
 cd $MOODLE
 pnpm i
-pnpx grunt ignorefiles
-#pnpx grunt amd --root=local/confirmdep --debug --force
-
 ##################################################
-# composer
-cd $MOODLE
-composer install
+# grunt
+pnpx grunt ignorefiles
+pnpx grunt amd --root=local/claude --debug --force
+pnpx grunt amd --root=local/gemini --debug --force
 
 ##################################################
 # creazione dei link
