@@ -5,10 +5,10 @@
 Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema utilizzando l'installer grafico calamares.
 
 ## User/password
-* gli utento di sistema della live sono: `live/evolution` e `root/evolution`;
-* l'utente `root` di mariadb è `root/evolution`, l'utente `moodle` del database è `moodle/evolution`, usa [phpmyadmin](http://moodledev/phpadmin) per connetterti al database:
+* gli utenti di sistema nella live sono: `live/evolution` e `root/evolution`;
+* l'utente `root` di mariadb è `root/evolution`, l'utente per moodle nel database è `moodle/evolution`, usa [phpmyadmin](http://moodledev/phpadmin) per connetterti al database:
 * l'utente amministratore del sito http://moodledev/moodle è: `admin/evolution`:
-* la cartella `moodle` è `/var/www/html/moodle`, la cartella `moodledata` è `/var/www/moodledata`.
+* le cartelle `moodle` e `moodledata` sono rispettivamente `/var/www/html/moodle`, e `/var/www/moodledata`.
 
 ## vscode extensions
 E' preinstallato Visual Studio Code con le estensioni: 
