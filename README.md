@@ -4,7 +4,7 @@
 
 Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema utilizzando l'installer grafico calamares.
 
-# User/password
+## User/password
 
 * L'utente mariadb è `root/evolution`
 * L'utente di phpmyadmin è `phpmyadmin/evolution`
@@ -12,7 +12,17 @@ Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema 
 * La cartella `moodle` è sotto `/var/www/html`
 * La cartella `moodledata` è sotto `/var/www/moodledata`
 
-# Uso
+## vscode extensions
+Sono installate le estensioni per visual studio code: PHP InselliSense, MDLCode - Moodel Plugin Development.
+
+## [Plugin in sviluppo](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=)
+Sto sviluppando alcuni semplici plugin per acquisire esperienza, li potete trovare [qui](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=).
+
+## Guida sviluppo
+* [Developer Resource centre](https://moodledev.io/)
+* [Welcome to the Moodle community](https://moodle.org/)
+
+# Utilizzo
 Questa immagine ISO live può essere utilizzata così com'è all'interno di un virtualizzatore come [boxes](https://apps.gnome.org/en/Boxes/), [proxmox ve](https://pve.proxmox.com/wiki/Main_Page), [virtualbox](https://www.virtualbox.org/) o copiata all'interno di una USB formattata con [ventoy](https://www.ventoy.net/en/index.html).
 
 Potete, infine, masterizzarla su una chiavetta USB con strumenti come [balena etcher](https://etcher.balena.io/), [rufus](https://rufus.ie/it/) o similari.
@@ -48,9 +58,3 @@ Aprite il vostro browser all'indirizzo: `http://moodledev/` e cliccate sul link 
 
 Non vi resta che eseguire il login con `admin/Evolution@1` e buona avventura!
 
-# [Plugin in sviluppo](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=)
-Sto sviluppando alcuni semplici plugin per acquisire esperienza, li potete trovare [qui](https://github.com/pieroproietti?tab=repositories&q=moodle-&type=&language=&sort=).
-
-# Guida sviluppo
-* [Developer Resource centre](https://moodledev.io/)
-* [Welcome to the Moodle community](https://moodle.org/)
