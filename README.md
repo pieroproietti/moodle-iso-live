@@ -8,7 +8,7 @@ Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema 
 
 * L'utente `root` di mariadb è `root/evolution`, l'utente `moodle` del database è `moodle/evolution`
 * Usa [phpmyadmin](http://moodledev/phpadmin) per connetterti al database
-* L'utente amministratore di [moodledev/moodle](http://moodledev/moodle) è: `admin/evolution`
+* L'utente amministratore del sito http://moodledev/moodle è: `admin/evolution`
 * La cartella `moodle` è `/var/www/html/moodle`, la cartella `moodledata` è `/var/www/moodledata`
 
 ## vscode extensions
