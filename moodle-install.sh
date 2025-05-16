@@ -23,9 +23,9 @@ cd $HOME/moodle/local
 #git clone https://github.com/pieroproietti/moodle-local_claude claude
 #git clone https://github.com/pieroproietti/moodle-local_codechecker codechecker
 #git clone https://github.com/pieroproietti/moodle-local_confirmdep confirmdep
-git clone https://github.com/pieroproietti/moodle-local_forzaprofilo forzaprofilo
+#git clone https://github.com/pieroproietti/moodle-local_forzaprofilo forzaprofilo
 #git clone https://github.com/pieroproietti/moodle-local_gemini gemini
-
+git clone https://github.com/pieroproietti/moodle-local_presentyou presentyou
 ##################################################
 # mv moodle in /var/www/html, install codechecker
 cd $HOME
@@ -54,8 +54,9 @@ cd $HOME
 #ln -s $LOCAL/claude       $HOME/moodle-local_claude
 #ln -s $LOCAL/codechecker  $HOME/moodle-local_codechecker
 #ln -s $LOCAL/confirmdep   $HOME/moodle-local_confirmdep
-ln -s $LOCAL/forzaprofilo $HOME/moodle-local_forzaprofilo
+#ln -s $LOCAL/forzaprofilo $HOME/moodle-local_forzaprofilo
 #ln -s $LOCAL/gemini       $HOME/moodle-local_gemini
+ln -s $LOCAL/presentyou $HOME/moodle-local_presentyou
 
 ##################################################
 # installazione 
