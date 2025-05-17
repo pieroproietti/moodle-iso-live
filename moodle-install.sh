@@ -26,6 +26,10 @@ cd $HOME/moodle/local
 #git clone https://github.com/pieroproietti/moodle-local_forzaprofilo forzaprofilo
 #git clone https://github.com/pieroproietti/moodle-local_gemini gemini
 git clone https://github.com/pieroproietti/moodle-local_presentyou presentyou
+cd presentyou 
+git checkout middleware
+cd ..
+
 ##################################################
 # mv moodle in /var/www/html, install codechecker
 cd $HOME
