@@ -19,16 +19,10 @@ unzip /opt/moodle-latest-500.zip
 ##################################################
 # git clone dei plugin
 cd $HOME/moodle/local
-#git clone https://github.com/pieroproietti/moodle-local_boost_dark local_boost_dark
-#git clone https://github.com/pieroproietti/moodle-local_claude claude
-#git clone https://github.com/pieroproietti/moodle-local_codechecker codechecker
-#git clone https://github.com/pieroproietti/moodle-local_confirmdep confirmdep
-#git clone https://github.com/pieroproietti/moodle-local_forzaprofilo forzaprofilo
-#git clone https://github.com/pieroproietti/moodle-local_gemini gemini
+git clone https://github.com/pieroproietti/moodle-local_boost_dark local_boost_dark
+git clone https://github.com/pieroproietti/moodle-local_codechecker codechecker
+git clone https://github.com/pieroproietti/moodle-local_confirmyou confirmyou
 git clone https://github.com/pieroproietti/moodle-local_presentyou presentyou
-cd presentyou 
-git checkout middleware
-cd ..
 
 ##################################################
 # mv moodle in /var/www/html, install codechecker
@@ -55,11 +49,7 @@ pnpx grunt ignorefiles
 # creazione dei link
 cd $HOME
 #ln -s $LOCAL/boost_dark   $HOME/moodle-local_boost_dark
-#ln -s $LOCAL/claude       $HOME/moodle-local_claude
-#ln -s $LOCAL/codechecker  $HOME/moodle-local_codechecker
-#ln -s $LOCAL/confirmdep   $HOME/moodle-local_confirmdep
-#ln -s $LOCAL/forzaprofilo $HOME/moodle-local_forzaprofilo
-#ln -s $LOCAL/gemini       $HOME/moodle-local_gemini
+ln -s $LOCAL/confirmyou $HOME/moodle-local_confirmyou
 ln -s $LOCAL/presentyou $HOME/moodle-local_presentyou
 
 ##################################################
