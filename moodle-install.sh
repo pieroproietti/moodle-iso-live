@@ -19,16 +19,13 @@ unzip /opt/moodle-latest-500.zip
 ##################################################
 # git clone dei plugin
 cd $HOME/moodle/local
-git clone https://github.com/pieroproietti/moodle-local_boost_dark local_boost_dark
-git clone https://github.com/pieroproietti/moodle-local_codechecker codechecker
-git clone https://github.com/pieroproietti/moodle-local_confirmyou confirmyou
-git clone https://github.com/pieroproietti/moodle-local_presentyou presentyou
+git clone https://github.com/pieroproietti/moodle-local_modalpresentyou modalpresentyou
+#git clone https://github.com/pieroproietti/moodle-local_presentyou presentyou
 
 ##################################################
 # mv moodle in /var/www/html, install codechecker
 cd $HOME
 mv moodle /var/www/html
-#mv moodlehq-moodle-local_codechecker-b4422b0/ $LOCAL/codechecker
 
 ##################################################
 # composer
@@ -42,15 +39,14 @@ pnpm i
 ##################################################
 # grunt
 pnpx grunt ignorefiles
-#pnpx grunt amd --root=local/claude --debug --force
-#pnpx grunt amd --root=local/gemini --debug --force
+pnpx grunt amd --root=local/modalpresentyou --debug --force
+#pnpx grunt amd --root=local/presentyou --debug --force
 
 ##################################################
 # creazione dei link
 cd $HOME
-#ln -s $LOCAL/boost_dark   $HOME/moodle-local_boost_dark
-ln -s $LOCAL/confirmyou $HOME/moodle-local_confirmyou
-ln -s $LOCAL/presentyou $HOME/moodle-local_presentyou
+#ln -s $LOCAL/presentyou $HOME/moodle-local_presentyou
+ln -s $LOCAL/modalpresentyou $HOME/moodle-local_modalpresentyou
 
 ##################################################
 # installazione 
@@ -60,7 +56,7 @@ sudo -u www-data /usr/bin/php install.php
 
 ##################################################
 # diritti per tutti, siamo in sviluppo..
-sudo chown $USER:www-data $MOODLE -R
+sudo chown www-data:www-data $MOODLE -R
 # user: www-data: lettura, scrittura, esecuzione; 
 # gruppo: www-data lettura, scrittura, esecuzione; 
 # altri: nessuno)
