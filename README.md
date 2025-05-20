@@ -1,7 +1,5 @@
 # README
 
-
-## english
 The `moodledev` repository offers a pre-configured Debian Bookworm live ISO, facilitating a ready-to-use environment for Moodle plugin development. It includes essential tools such as Moodle, MariaDB, PHP, and phpMyAdmin, streamlining the setup process for developers. Users can operate the system in live mode or install it using the Calamares graphical installer.
 
 * **Developer-Friendly Environment**: The live ISO provides a comprehensive setup, allowing developers to focus on plugin development without the overhead of manual configuration.
