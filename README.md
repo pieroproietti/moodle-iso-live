@@ -10,6 +10,8 @@ The `moodledev` repository offers a pre-configured Debian Bookworm live ISO, fac
 
 * **Open Source Licensing**: The project is released under the MIT license, encouraging community contributions and adaptations.
 
+[Download ISO `egg_of-debian-booworm-moodledev_amd64_...`](https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e?dmr=1&ec=wgc-drive-globalnav-goto)
+
 ## italiano
 `moodledev` è una live Debian bookworm, adattata per lo sviluppo con [moodle](./MOODLE.md). La puoi scaricare liberamente dal mio [drive](https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e?dmr=1&ec=wgc-drive-globalnav-goto), cerca l'ultima versione di `egg_of-debian-booworm-moodledev_amd64_...`.
 
