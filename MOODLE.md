@@ -81,6 +81,35 @@ sudo chown -R artisan:www-data $MOODLE
 
 
 ### Moduli AMD (Asynchronous module definition)
+Preferisco di gran lunga usare pnpm invece di npm.
+
+Ho aggiunto queste righe in `/etc/bash.bashrs`
+
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+ed ho installato pnpm con lo script standard:
+
+```
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+```
+
+A questo punto ho dovuto cambiare i permessi in `~/.local/share/pnpm`
+```
+sudo chown -R $(whoami):$(whoami) ~/.local/share/pnpm
+```
+
+e, finalmente installare `grunt-cli` come pacchetto globale:
+
+```
+pnpm install grunt-cli -g
+```
+
 
 Per utilizzare i moduli AMD occorre installare [grunt](https://gruntjs.com/) e `nodejs>=v22.15.0`.
 
@@ -92,5 +121,5 @@ pnpm i
 Quindi compilare i moduli amd.
 
 ```
-pnpx grunt amd  --debug --root=local/confirm --force
+grunt amd  --debug --root=local/modalyou --force
 ```
