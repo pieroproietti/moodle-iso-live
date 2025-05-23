@@ -18,9 +18,10 @@ unzip /opt/moodle-latest-500.zip
 ##################################################
 # git clone dei plugin
 cd $HOME/moodle/local
-#git clone https://github.com/pieroproietti/moodle-local_modalyou modalyou
-#git clone https://github.com/pieroproietti/moodle-local_presentyou presentyou
 git clone https://github.com/pieroproietti/moodle-local_whereareyou whereareyou
+cd whereareyou
+git checkout ibrido
+cd ..
 
 ##################################################
 # mv moodle in /var/www/html, install codechecker
@@ -39,15 +40,11 @@ pnpm i
 ##################################################
 # grunt
 pnpx grunt ignorefiles
-grunt amd --root=local/modalyou --debug --force
-#grunt amd --root=local/presentyou --debug --force
 grunt amd --root=local/whereareyou --debug --force
 
 ##################################################
 # creazione dei link
 cd $HOME
-#ln -s $LOCAL/presentyou $HOME/moodle-local_presentyou
-#ln -s $LOCAL/modalyou $HOME/moodle-local_modalyou
 ln -s $LOCAL/whereareyou $HOME/moodle-local_whereareyou
 
 ##################################################
