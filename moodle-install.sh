@@ -14,13 +14,13 @@ rm -rf $MOODLE
 # unzip moodle
 cd $HOME
 unzip /opt/moodle-latest-500.zip
-#unzip /opt/moodlehq-moodle-local_codechecker-v5.0.8-0-gb4422b0.zip
 
 ##################################################
 # git clone dei plugin
 cd $HOME/moodle/local
 #git clone https://github.com/pieroproietti/moodle-local_modalyou modalyou
-git clone https://github.com/pieroproietti/moodle-local_presentyou presentyou
+#git clone https://github.com/pieroproietti/moodle-local_presentyou presentyou
+git clone https://github.com/pieroproietti/moodle-local_whereareyou whereareyou
 
 ##################################################
 # mv moodle in /var/www/html, install codechecker
@@ -39,14 +39,16 @@ pnpm i
 ##################################################
 # grunt
 pnpx grunt ignorefiles
-#pnpx grunt amd --root=local/modalyou --debug --force
-pnpx grunt amd --root=local/presentyou --debug --force
+grunt amd --root=local/modalyou --debug --force
+#grunt amd --root=local/presentyou --debug --force
+grunt amd --root=local/whereareyou --debug --force
 
 ##################################################
 # creazione dei link
 cd $HOME
-ln -s $LOCAL/presentyou $HOME/moodle-local_presentyou
+#ln -s $LOCAL/presentyou $HOME/moodle-local_presentyou
 #ln -s $LOCAL/modalyou $HOME/moodle-local_modalyou
+ln -s $LOCAL/whereareyou $HOME/moodle-local_whereareyou
 
 ##################################################
 # installazione 
@@ -57,7 +59,4 @@ sudo -u www-data /usr/bin/php install.php
 ##################################################
 # diritti per tutti, siamo in sviluppo..
 sudo chown www-data:www-data $MOODLE -R
-# user: www-data: lettura, scrittura, esecuzione; 
-# gruppo: www-data lettura, scrittura, esecuzione; 
-# altri: nessuno)
 sudo chmod 770 $MOODLE -R
