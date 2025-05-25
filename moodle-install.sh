@@ -18,7 +18,7 @@ unzip /opt/moodle-latest-500.zip
 ##################################################
 # git clone dei plugin
 cd $HOME/moodle/local
-#git clone https://github.com/pieroproietti/moodle-local_whereareyou whereareyou
+git clone https://github.com/pieroproietti/moodle-local_whereareyou whereareyou
 
 ##################################################
 cd $HOME
@@ -36,12 +36,12 @@ pnpm i
 ##################################################
 # grunt
 pnpx grunt ignorefiles
-#grunt amd --root=local/whereareyou --debug --force
+grunt amd --root=local/whereareyou --debug --force
 
 ##################################################
 # creazione dei link
 cd $HOME
-#ln -s $LOCAL/whereareyou $HOME/moodle-local_whereareyou
+ln -s $LOCAL/whereareyou $HOME/moodle-local_whereareyou
 
 ##################################################
 # installazione 
