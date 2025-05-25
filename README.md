@@ -21,6 +21,7 @@ Avviata la live, potrete utilizzarla così com'è, oppure installare il sistema 
 * gli utenti di sistema nella live sono: `live/evolution` e `root/evolution`;
 * l'utente `root` di mariadb è `root/evolution`, l'utente per moodle nel database è `moodle/evolution`, usa [phpmyadmin](http://moodledev/phpmyadmin) per connetterti al database:
 * l'utente amministratore del sito http://moodledev/moodle è: `admin/evolution`:
+* esiste anche un utente semplice: `ciccio/Evolution@1`:
 * le cartelle `moodle` e `moodledata` sono rispettivamente `/var/www/html/moodle`, e `/var/www/moodledata`.
 
 ## vscode extensions
@@ -68,4 +69,3 @@ Aprite il vostro browser all'indirizzo: http://moodledev/ e cliccate sul link [m
 ![](./img/moodledev-login.png)
 
 Non vi resta che eseguire il login con `admin/evolution` e buona avventura!
-
