@@ -35,7 +35,7 @@ Aggiungi ad inizio, come nota:
 ;;;;;;;;;;;;;;;; MOODLE ;;;;;;;;;;;;;;;;
 ;;;;find and replace with this values;;;
 ;extension=gd.so                # moodle
-;memory_limit = 40M             # moodle
+;memory_limit = 128M            # moodle
 ;post_max_size = 80M            # moodle
 ;upload_max_filesize = 80M      # moodle 
 ;max_input_vars=5000            # moodle
@@ -63,7 +63,7 @@ unzip darkwolf-5.2.zip
 ```
 Quindi copialo in:
 ```
-mv darkwolf /usr/share/phpmyadmin/themes/
+sudo mv darkwolf /usr/share/phpmyadmin/themes/
 ```
 
 A questo punto, edita `/etc/phpmyadmin/config.inc.php` ed aggiungi la riga:
